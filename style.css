@@ -1,0 +1,66 @@
+body {
+  background-color: AliceBlue;
+  text-align: center;
+}
+
+h1,h2,h3 {
+  background-color: CadetBlue;
+  padding: 10px;  
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.page-wrapper {
+  margin: 10px;
+  align-content: center;
+  background-color: Olive;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 10px;
+  background-color: Tan;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
+  flex: 2;
+  margin: 10px;
+  background-color: Tan;
+}
+
+#bikeinfo {
+	displa: inline-block;
+  position: relative;
+  left: 10px;
+  text-align: left;
+  display: none;
+  width: 200px;
+}

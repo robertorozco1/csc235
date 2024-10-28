@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>
+<div id="datetime"></div>
+Welcome to My Portfolio!! 
+</h1>
+<div class="page-wrapper">
+  <div class="row">
+    <div class="column">
+	  <h3> Skills & Hobbies </h3>
+	  <ul>
+	    <li> Photograhpy </li>
+		<li> Cooking </li>
+		<li> Guitar </li>
+		<li> Cycling </li>
+    </div>
+    <div class="column">
+	  <h3> Education & Experience </h3>
+      <table>
+	    <tr>
+		  <th> Company/School </th>
+		  <th> Position </th>
+		  <th> Skill Set </th>
+        </tr>
+		<tr>
+		  <td> SCSU </td>
+		  <td> Webmaster, WSIN </td>
+		  <td> HTML/CSS, Web Radio Livestreaming </td>
+		</tr>
+		<tr>
+		  <td> SCSU </td>
+		  <td> Webmaster, Environmental Science </td>
+		  <td> HTML/CSS, CMS, Camera Live Stream </td>
+		</tr>
+		<tr>
+		  <td> ACES </td>
+		  <td> Helpdesk Technician </td>
+		  <td> Windows AD, Printers, Chromeboooks </td>
+		</tr>
+	  </table>
+    </div>
+	<div class="double-column">
+	  <h3> My Daily Rider (not actual picture) </h3>
+	  <div style="display: inline-block;">
+	  <img src="f600.jpg" alt="Cannondale F600 2001" width="300" height="250" style="float: left; padding: 5px;" ></img>
+		<ul id="bikeinfo">
+		    <li>TIG-welded</li>
+		    <li>6061 T6 aluminum</li>
+		    <li>Headshok Super Fatty DL</li>
+		    <li>Avid SD-2.0 L levers</li>
+		    <li>Shimano Deore RapidFire SL</li>
+		    <li>Cannondale PX3, 22/32/44 teeth</li>
+		    <li>Shimano STX BB</li>
+		  </ul>	
+		<button onclick="pushtext()">Click Here For Bike Info</button>
+	</div>
+	</div>
+  </div>
+  <div class="row">
+    <div class="column">
+	    <h1>To-Do List</h1>
+
+    <button onclick="loadTodos()">Load To-Do List</button>
+    <ul id="todoList">
+        <!-- List of to-do items will be loaded here -->
+    </ul>
+
+	</div>
+	<div class="column">
+	<h2>Add New To-Do</h2>
+    <form id="todoForm" onsubmit="addTodo(); return false;">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="completed">Completed:</label>
+        <input type="checkbox" id="completed" name="completed">
+        <br>
+        <button type="submit">Add To-Do</button>
+    </form>
+	</div>
+	<div class="column">
+	<ul id="newTodo">
+        <!-- New to-do item will appear here -->
+    </ul>
+	</div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
